@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn 11ty with Me</title>
+    <style webc:keep>
+        * {
+            margin: 0;
+        }
+        html,
+        body {
+            min-height: 100vh;
+        }
+        body {
+            background-color: #EFEFEF;
+            font-family: sans-serif;;
+        }
+        main {
+            background-color: #FFFFFF;
+            margin: 0 auto;
+            max-width: 85ch;
+            min-height: 100vh;
+            padding: 30px 20px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Learn 11ty with Me</h1>
+</main>
+</body>
+</html>

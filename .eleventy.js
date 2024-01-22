@@ -11,6 +11,6 @@ module.exports = function(eleventyConfig) {
             output: "public",
             layouts: "_includes/layouts"
         },
-        templateFormats: ["webc", "md", "njk", "html", "liquid", "css" ]
+        templateFormats: ["webc", "md", "css" ]
     };
 };
