@@ -27,6 +27,9 @@
             padding: 30px 20px;
         }
     </style>
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="VSOJZUMT" defer webc:keep></script>
+    <!-- / Fathom -->
 </head>
 <body>
 <main>
