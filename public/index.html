@@ -26,8 +26,12 @@
             min-height: 100vh;
             padding: 30px 20px;
         }
-        strike {
-            color: #8f8f8f;
+        .todo {
+            color: #6232FA;
+        }
+        .todo-complete {
+            text-decoration: line-through;
+            color: #567A58;
         }
         .date-complete {
             margin-left: 4px;
@@ -53,21 +57,54 @@
 
     <h2>ToDos</h2>
     <ul>
-        <li><strike>Create local 11ty site</strike><span class="date-complete">1/22/2024</span></li>
-        <li><strike>Register domain name</strike><span class="date-complete">1/22/2024</span></li>
-        <li><strike>Add domain name to Netlify</strike><span class="date-complete">1/22
-            /2024</span></li>
-        <li><strike>Add Fathom Analytics</strike><span class="date-complete">1/23/2024</span></li>
-        <li>Create a 404 page</li>
-        <li>Add some styles. This thing is ugly</li>
-        <li>Add copyright to footer</li>
-        <li>Add an about page</li>
-        <li>Add photo to about page</li>
-        <li>Add tools I use page</li>
-        <li>Add now page</li>
-        <li>Add generator tag to head</li>
-        <li>Add a contact page</li>
-        <li>Write intro blog post</li>
+        <li>
+            <span class="todo-complete">Create local 11ty site</span>
+            <span class="date-complete">1/22/2024</span>
+        </li>
+        <li><span class="todo-complete">Register domain name</span>
+            <span class="date-complete">1/22/2024</span>
+        </li>
+        <li>
+            <span class="todo-complete">Add domain name to Netlify</span>
+            <span class="date-complete">1/22/2024</span>
+        </li>
+        <li>
+            <span class="todo-complete">Add Fathom Analytics</span>
+            <span class="date-complete">1/23/2024</span>
+        </li>
+        <li>
+            <span class="todo">Learn how to use 11ty's data cascade to fill in metadata</span>
+        </li>
+        <li>
+            <span class="todo">Create a 404 page</span>
+        </li>
+        <li>
+            <span class="todo">Add some styles. This thing is ugly</span>
+        </li>
+        <li>
+            <span class="todo">Add copyright to footer</span>
+        </li>
+        <li>
+            <span class="todo">Add an about page</span>
+        </li>
+        <li>
+            <span class="todo">Add photo to about page</span>
+        </li>
+        <li>
+            <span class="todo">Add tools I use page</span>
+        </li>
+        <li>
+            <span class="todo">Add now page</span>
+        </li>
+        <li>
+            <span class="todo">Add generator tag to head</span>
+        </li>
+        <li>
+            <span class="todo">Add a contact page</span>
+        </li>
+        <li>
+            <span class="todo">Write intro blog post</span>
+        </li>
     </ul>
     <h2>Blog Posts to Write</h2>
     <ul>
