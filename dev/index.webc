@@ -26,6 +26,13 @@
             min-height: 100vh;
             padding: 30px 20px;
         }
+        strike {
+            color: #8f8f8f;
+        }
+        .date-complete {
+            margin-left: 4px;
+            font-size: 14px;
+        }
     </style>
     <!-- Fathom - beautiful, simple website analytics -->
     <script src="https://cdn.usefathom.com/script.js" data-site="VSOJZUMT" defer webc:keep></script>
@@ -46,10 +53,11 @@
 
     <h2>ToDos</h2>
     <ul>
-        <li>Create local 11ty site</li>
-        <li>Register domain name</li>
-        <li>Add domain name to Netlify</li>
-        <li>Add Fathom Analytics</li>
+        <li><strike>Create local 11ty site</strike><span class="date-complete">1/22/2024</span></li>
+        <li><strike>Register domain name</strike><span class="date-complete">1/22/2024</span></li>
+        <li><strike>Add domain name to Netlify</strike><span class="date-complete">1/22
+            /2024</span></li>
+        <li><strike>Add Fathom Analytics</strike><span class="date-complete">1/23/2024</span></li>
         <li>Create a 404 page</li>
         <li>Add some styles. This thing is ugly</li>
         <li>Add copyright to footer</li>
