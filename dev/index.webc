@@ -46,6 +46,7 @@
         <li>Create local 11ty site</li>
         <li>Register domain name</li>
         <li>Add domain name to Netlify</li>
+        <li>Add Fathom Analytics</li>
         <li>Create a 404 page</li>
         <li>Add some styles. This thing is ugly</li>
         <li>Add copyright to footer</li>
