@@ -20,22 +20,41 @@
         }
 
         main {
-            background-color: #FFFFFF;
             margin: 0 auto;
-            max-width: 85ch;
             min-height: 100vh;
-            padding: 30px 20px;
         }
+
+        ul {
+            padding-inline-start: 20px;
+        }
+
         .todo {
             color: #6232FA;
         }
+
         .todo-complete {
             text-decoration: line-through;
             color: #567A58;
         }
+
         .date-complete {
             margin-left: 4px;
             font-size: 14px;
+        }
+
+        .site-content {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(370px, 2fr));
+            margin: 0 auto;
+            max-width: 130ch;
+        }
+
+
+        .site-main,
+        .site-sidebar {
+            background-color: #ffffff;
+            padding: 30px 20px;
         }
     </style>
     <!-- Fathom - beautiful, simple website analytics -->
@@ -43,77 +62,91 @@
     <!-- / Fathom -->
 </head>
 <body>
-<main>
-    <h1>Learn 11ty with Me</h1>
-    <p>
-        Hi! I’m Ryan. A few weeks ago I started learning 11ty. It’s been really fun, but it’s also
-        been a struggle. It turns out I don’t know much about modern HTML, CSS, JavaScript or
-        accessibility. I’d like to change that.
-    </p>
+<div class="site-content">
+    <main class="site-main">
+        <h1>Learn 11ty with Me</h1>
+        <p>
+            Hi! I’m Ryan. A few weeks ago I started learning 11ty. It’s been really fun, but it’s
+            also been a struggle. It turns out I don’t know much about modern HTML, CSS, JavaScript
+            or accessibility. I’d like to change that.
+        </p>
 
-    <p>
-        I started this blog to share what I’m learning.
-    </p>
+        <p>
+            I started this blog to share what I’m learning.
+        </p>
 
-    <h2>ToDos</h2>
-    <ul>
-        <li>
-            <span class="todo-complete">Create local 11ty site</span>
-            <span class="date-complete">1/22/2024</span>
-        </li>
-        <li><span class="todo-complete">Register domain name</span>
-            <span class="date-complete">1/22/2024</span>
-        </li>
-        <li>
-            <span class="todo-complete">Add domain name to Netlify</span>
-            <span class="date-complete">1/22/2024</span>
-        </li>
-        <li>
-            <span class="todo-complete">Add Fathom Analytics</span>
-            <span class="date-complete">1/23/2024</span>
-        </li>
-        <li>
-            <span class="todo">Learn how to use 11ty's data cascade to fill in metadata</span>
-        </li>
-        <li>
-            <span class="todo">Create a 404 page</span>
-        </li>
-        <li>
-            <span class="todo">Add some styles. This thing is ugly</span>
-        </li>
-        <li>
-            <span class="todo">Add copyright to footer</span>
-        </li>
-        <li>
-            <span class="todo">Add an about page</span>
-        </li>
-        <li>
-            <span class="todo">Add photo to about page</span>
-        </li>
-        <li>
-            <span class="todo">Add tools I use page</span>
-        </li>
-        <li>
-            <span class="todo">Add now page</span>
-        </li>
-        <li>
-            <span class="todo">Add generator tag to head</span>
-        </li>
-        <li>
-            <span class="todo">Add a contact page</span>
-        </li>
-        <li>
-            <span class="todo">Write intro blog post</span>
-        </li>
-    </ul>
-    <h2>Blog Posts to Write</h2>
-    <ul>
-        <li>Why 11ty</li>
-        <li>Why WebC
-        </li><li>Write post on using JS to create menu</li>
-        <li>Write post on how to use named slots with WebC</li>
-    </ul>
-</main>
+        <article></article>
+
+
+    </main>
+    <aside class="site-sidebar">
+        <section>
+            <h2>ToDos</h2>
+            <ul>
+                <li>
+                    <span class="todo-complete">Create local 11ty site</span>
+                    <span class="date-complete">1/22/2024</span>
+                </li>
+                <li><span class="todo-complete">Register domain name</span>
+                    <span class="date-complete">1/22/2024</span>
+                </li>
+                <li>
+                    <span class="todo-complete">Add domain name to Netlify</span>
+                    <span class="date-complete">1/22/2024</span>
+                </li>
+                <li>
+                    <span class="todo-complete">Add Fathom Analytics</span>
+                    <span class="date-complete">1/23/2024</span>
+                </li>
+                <li>
+                    <span class="todo">Learn how to use 11ty's data cascade to fill in metadata</span>
+                </li>
+                <li>
+                    <span class="todo">Create a 404 page</span>
+                </li>
+                <li>
+                    <span class="todo">Add styles for todos in progress</span>
+                </li>
+                <li>
+                    <span class="todo">Add some styles. This thing is ugly</span>
+                </li>
+                <li>
+                    <span class="todo">Add copyright to footer</span>
+                </li>
+                <li>
+                    <span class="todo">Add about page</span>
+                </li>
+                <li>
+                    <span class="todo">Add photo to about page</span>
+                </li>
+                <li>
+                    <span class="todo">Add tools I use page</span>
+                </li>
+                <li>
+                    <span class="todo">Add now page</span>
+                </li>
+                <li>
+                    <span class="todo">Add generator tag to head</span>
+                </li>
+                <li>
+                    <span class="todo">Add a contact page</span>
+                </li>
+                <li>
+                    <span class="todo">Write intro blog post</span>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Blog Posts to Write</h2>
+            <ul>
+                <li>Why 11ty</li>
+                <li>Why WebC
+                </li><li>Write post on using JS to create menu</li>
+                <li>Write post on how to use named slots with WebC</li>
+            </ul>
+        </section>
+    </aside>
+</div>
 
 </body>
 </html>
