@@ -45,9 +45,14 @@
         .site-content {
             display: grid;
             gap: 20px;
-            grid-template-columns: repeat(auto-fit, minmax(370px, 2fr));
             margin: 0 auto;
             max-width: 130ch;
+        }
+
+        @media screen and (min-width: 800px) {
+            .site-content {
+                grid-template-columns: 3fr 1fr;
+            }
         }
 
 
