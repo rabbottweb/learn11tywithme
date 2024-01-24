@@ -4,72 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn 11ty with Me</title>
-    <style webc:keep>
-        * {
-            margin: 0;
-        }
 
-        html,
-        body {
-            min-height: 100vh;
-        }
+    <link rel="stylesheet" type="text/css" href="/assets/style.css" webc:keep>
 
-        body {
-            background-color: #EFEFEF;
-            font-family: sans-serif;;
-        }
-
-        main {
-            margin: 0 auto;
-            min-height: 100vh;
-        }
-
-        ul {
-            padding-inline-start: 20px;
-        }
-
-        .todo {
-            color: #6232FA;
-        }
-
-        .todo-complete {
-            text-decoration: line-through;
-            color: #567A58;
-        }
-
-        .date-complete {
-            margin-left: 4px;
-            font-size: 14px;
-        }
-
-        .site-content {
-            display: grid;
-            gap: 20px;
-            margin: 0 auto;
-            max-width: 130ch;
-        }
-
-        @media screen and (min-width: 800px) {
-            .site-content {
-                grid-template-columns: 3fr 1fr;
-            }
-        }
-
-
-        .site-main,
-        .site-sidebar {
-            background-color: #ffffff;
-            padding: 30px 20px;
-        }
-    </style>
     <!-- Fathom - beautiful, simple website analytics -->
     <script src="https://cdn.usefathom.com/script.js" data-site="VSOJZUMT" defer webc:keep></script>
     <!-- / Fathom -->
 </head>
 <body>
 <div class="site-content">
-    <main class="site-main">
+    <header>
         <h1>Learn 11ty with Me</h1>
+    </header>
+    <main class="site-main">
         <p>
             Hi! I’m Ryan. A few weeks ago I started learning 11ty. It’s been really fun, but it’s
             also been a struggle. It turns out I don’t know much about modern HTML, CSS, JavaScript
@@ -104,7 +51,8 @@
                     <span class="date-complete">1/23/2024</span>
                 </li>
                 <li>
-                    <span class="todo">Update grid layout so sidebar is smaller</span>
+                    <span class="todo-complete">Update grid layout so sidebar is smaller</span>
+                    <span class="date-complete">1/24/2024</span>
                 </li>
                 <li>
                     <span class="todo">Learn how to use 11ty's data cascade to fill in metadata</span>
@@ -154,6 +102,9 @@
             </ul>
         </section>
     </aside>
+    <footer>
+        &copy; 2024 Learn 11ty With Me
+    </footer>
 </div>
 </body>
 </html>

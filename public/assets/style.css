@@ -1,0 +1,77 @@
+@import "reset.css";
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    background-color: #EFEFEF;
+    font-family: sans-serif;;
+    padding: 1ex;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+}
+ul {
+    padding-inline-start: 20px;
+}
+
+.todo {
+    color: #6232FA;
+}
+
+.todo-complete {
+    text-decoration: line-through;
+    color: #567A58;
+}
+
+.date-complete {
+    margin-left: 4px;
+    font-size: 14px;
+}
+
+.site-content {
+    display: grid;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 130ch;
+}
+
+main,
+aside,
+footer,
+header {
+    border: 1px solid #d0d0d0;
+}
+
+header,
+footer,
+.site-main,
+.site-sidebar {
+    background-color: #ffffff;
+    padding: 2ex 2ex;
+}
+
+header,
+footer {
+    grid-column: 1 / -1;
+}
+
+footer {
+    font-size: 15px;
+    text-align: center;
+}
+
+.site-main,
+.site-sidebar {
+    background-color: #ffffff;
+    padding: 30px 2ex;
+}
+
+@media screen and (min-width: 800px) {
+    .site-content {
+        grid-template-columns: 3fr 1fr;
+    }
+}
