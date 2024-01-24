@@ -1,5 +1,10 @@
 @import "reset.css";
 
+:root {
+    --color-primary:  #6232FA;
+    --color-secondary: #567A58;
+    --color-link-shadow: #b9b9b9;
+}
 html,
 body {
     min-height: 100vh;
@@ -14,17 +19,37 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
 }
+
 ul {
     padding-inline-start: 20px;
 }
 
+a {
+    transition: .25s ease-in-out all;
+}
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 -4px 0 0 var(--color-link-shadow) inset;
+    padding: 0 2px 2px;
+}
+
+a:hover,
+a:active,
+a:focus {
+    box-shadow: 0 -10px 0 0 var(--color-link-shadow) inset;
+    text-decoration: none;
+}
+
 .todo {
-    color: #6232FA;
+    color: var(--color-primary);
 }
 
 .todo-complete {
     text-decoration: line-through;
-    color: #567A58;
+    color: var(--color-primary);
 }
 
 .date-complete {
@@ -68,6 +93,10 @@ footer {
 .site-sidebar {
     background-color: #ffffff;
     padding: 30px 2ex;
+}
+
+.stack * + * {
+    margin-top: 1ex;
 }
 
 @media screen and (min-width: 800px) {

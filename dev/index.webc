@@ -17,15 +17,17 @@
         <h1>Learn 11ty with Me</h1>
     </header>
     <main class="site-main">
-        <p>
-            Hi! I’m Ryan. A few weeks ago I started learning 11ty. It’s been really fun, but it’s
-            also been a struggle. It turns out I don’t know much about modern HTML, CSS, JavaScript
-            or accessibility. I’d like to change that.
-        </p>
+        <div class="stack">
+            <p>
+                Hi! I’m Ryan. A few weeks ago I started learning <a href="https://11ty.dev">11ty
+            </a>. It’s been really fun, but it’s also been a struggle. It turns out I don’t know
+                much about modern HTML, CSS, JavaScript or accessibility. I’d like to change that.
+            </p>
 
-        <p>
-            I started this blog to share what I’m learning.
-        </p>
+            <p>
+                I started this blog to share what I’m learning. And as a reference for myself.
+            </p>
+        </div>
 
         <article></article>
 
@@ -44,6 +46,14 @@
                 </li>
                 <li>
                     <span class="todo-complete">Add domain name to Netlify</span>
+                    <span class="date-complete">1/22/2024</span>
+                </li>
+                <li>
+                    <span class="todo-complete">Add site to Github</span>
+                    <span class="date-complete">1/22/2024</span>
+                </li>
+                <li>
+                    <span class="todo-complete">Add site to Netlify</span>
                     <span class="date-complete">1/22/2024</span>
                 </li>
                 <li>
